@@ -1,0 +1,61 @@
+<div>
+    <button mat-raised-button> Hello World</button>
+    <button mat-button> Hello World</button>
+    <button mat-button>ClickMe.!</button>
+    <button mat-flat-button> Click Me </button>
+    <button mat-stroked-button> Click Me </button>
+    </div>
+    
+    <div>
+    <button mat-icon-button> Icon </button>
+    <button mat-fab> Icon </button>
+    <button mat-mini-fab> Icon </button>
+    
+    </div>
+    <div>
+      <button color="primary" mat-button>ClickMe.!</button>
+    <button color="accent" mat-flat-button> Click Me </button>
+    <button color="warn" mat-stroked-button> Click Me </button>
+    </div>
+    
+    
+    <div class="example-button-row">
+      <button mat-raised-button>Basic</button>
+      <button mat-raised-button color="primary" disableRipple>Primary</button>
+      <button mat-raised-button color="accent">Accent</button>
+      <button mat-raised-button color="warn">Warn</button>
+      <button mat-raised-button disabled>Disabled</button>
+      <a mat-raised-button routerLink=".">Link</a>
+    </div>
+    
+    <div>
+      <button mat-stroked-button>Basic</button>
+      <button mat-stroked-button color="primary" disableRipple>Primary</button>
+      <button mat-stroked-button color="accent">Accent</button>
+      <button mat-stroked-button color="warn">Warn</button>
+      <button mat-stroked-button disabled>Disabled</button>
+    </div>
+    
+    <div>
+      <mat-button-toggle #toggleBtn disableRipple>Toggle</mat-button-toggle>
+      {{toggleBtn.checked}}
+      <mat-button-toggle color="primary">Toggle</mat-button-toggle>
+      <mat-button-toggle color="accent">Toggle</mat-button-toggle>
+      <mat-button-toggle color="warn">Toggle</mat-button-toggle>
+    </div>
+    
+    <div>
+      <mat-button-toggle #togglebutton disabled checked>Toggle</mat-button-toggle>
+      {{togglebutton.checked}}
+    </div>
+    
+    <div>
+      <mat-button-toggle-group #togglegroup="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+      </mat-button-toggle-group>
+      {{togglegroup.value}}
+    </div>
+    
+    

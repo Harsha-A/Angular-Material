@@ -1,0 +1,37 @@
+
+<h1>Mat-btn</h1>
+<div>
+    <button mat-button>Click Me</button>
+    <button mat-raised-button>Click Me</button>
+    <button mat-flat-button>Click Me</button>
+    <button mat-stroked-button>Click Me</button>
+    <button mat-button disabled>Click Me</button>
+</div>
+<br>
+<div>
+    <button mat-button color="primary"> Primary </button>
+    <button mat-button color="accent"> Primary </button>
+    <button mat-button color="warn"> Primary </button>
+</div>
+<div>
+    <button mat-raised-button color="primary"> Primary </button>
+    <button mat-raised-button color="accent"> Primary </button>
+    <button mat-raised-button color="warn"> Primary </button>
+</div>
+
+<div> 
+    <mat-button-toggle>Click Me</mat-button-toggle>
+    <mat-button-toggle #togglebutton checked>Toggle Button</mat-button-toggle>
+    {{togglebutton.checked}}
+</div>
+
+<br>
+<div>
+    <mat-button-toggle-group #tbtn="matButtonToggleGroup">
+        <mat-button-toggle value="aangular">Angular</mat-button-toggle>
+        <mat-button-toggle value="rreact">React</mat-button-toggle>
+        <mat-button-toggle value="vvue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{tbtn.value}}
+</div>
+
